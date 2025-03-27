@@ -3,9 +3,9 @@ import Calendly from "./Calendly";
 
 const BusinessTalk = () => {
   return (
-    <div className="w-full min-h-screen bg-white flex flex-col justify-center items-center p-4 mt-30">
+    <div className="w-full bg-white flex flex-col items-center p-4">
       <BusinessContact />
-      <div className="w-full max-w-[1000px] h-[400px] sm:h-[600px] bg-white mx-auto mt-10">
+      <div className="w-full max-w-[1000px] h-auto min-h-[700px] bg-white mt-10">
         <Calendly />
       </div>
     </div>

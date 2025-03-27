@@ -10,7 +10,6 @@ import SecondLine from "./components/SecondLine";
 import BusinessTalk from "./components/Business/BusinessTalk";
 import ThirdLine from "./components/ThirdLine";
 
-
 export default function Home() {
   return (
     <div className="w-full">
@@ -19,9 +18,11 @@ export default function Home() {
         <UnderlineText text="Asesorías personalizadas para que tu negocio crezca con seguridad" />
         <GoButton />
       </main>
-      <div className="w-full max-w-7xl mx-auto mt-[250px]">
+
+      <div className="mt-[250px]">
         <ColorLine />
       </div>
+
       <div className="w-full">
         <HowItWorksWithVideo />
         <ResponsiveContainer />
@@ -29,8 +30,9 @@ export default function Home() {
         <MainContainer />
         <SecondLine />
         <BusinessTalk />
-        <ThirdLine />
       </div>
+
+      <ThirdLine />
     </div>
   );
 }

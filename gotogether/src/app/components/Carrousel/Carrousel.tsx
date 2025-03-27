@@ -25,7 +25,7 @@ const Carousel = () => {
   const translateX = useCarouselAnimation(items.length, speed, itemWidth);
 
   return (
-    <div className="w-full min-h-[59px] bg-[#F2EEE6] flex items-center justify-start overflow-hidden">
+    <div className="w-screen min-h-[59px] bg-[#F2EEE6] flex items-center justify-start overflow-hidden">
       <div
         className="flex transition-transform duration-0 whitespace-nowrap"
         style={{
@@ -44,6 +44,5 @@ const Carousel = () => {
     </div>
   );
 };
-
 
 export default Carousel;
