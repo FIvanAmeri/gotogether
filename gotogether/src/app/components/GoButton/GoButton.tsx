@@ -7,17 +7,13 @@ const GoButton = () => {
 
   return (
     <div
-      className="go-button-container w-[70px] h-[70px] flex items-center justify-center mx-auto mt-[400px]"
+      className="go-button-container w-[70px] h-[70px] flex items-center justify-center mx-auto mt-[26px] sm:mt-12"
       onClick={() => scrollTo("how-it-works")}
     >
-      <button
-        className="go-button relative w-full h-full rounded-full border-none shadow-[0px_0px_8px_rgba(0,0,0,0.3)] text-xs sm:text-base font-inter font-medium text-[20px] leading-[16px] tracking-[0%] transition-all duration-300 overflow-hidden group"
-      >
-
+      <button className="go-button relative w-full h-full rounded-full border-none shadow-[0px_0px_8px_rgba(0,0,0,0.3)] text-xs sm:text-base font-inter font-medium text-[20px] leading-[16px] tracking-[0%] transition-all duration-300 overflow-hidden group">
         <span className="relative z-10 text-[#737373] group-hover:text-white transition-colors duration-300">
           ¡GO!
         </span>
-
         <div
           className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           style={{
