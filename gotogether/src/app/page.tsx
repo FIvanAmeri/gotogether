@@ -1,3 +1,6 @@
+
+
+import Header from "./components/Header/Header";
 import TitleSection from "./components/Easy/TitleSection";
 import UnderlineText from "./components/Easy/UnderlineText";
 import GoButton from "./components/GoButton/GoButton";
@@ -13,22 +16,44 @@ import ThirdLine from "./components/ThirdLine";
 export default function Home() {
   return (
     <div className="w-full">
-      <main className="w-full max-w-7xl px-4 sm:px-8 mx-auto flex flex-col gap-8 sm:gap-12">
-        <TitleSection />
-        <UnderlineText text="Asesorías personalizadas para que tu negocio crezca con seguridad" />
-        <GoButton />
-      </main>
+      <div>
+        <div className="w-full flex justify-end md:justify-start">
+          <Header />
+        </div>
+      </div>
 
-      <div className="mt-[250px]">
+      <div className="px-4 w-full flex flex-col items-center py-8 sm:py-12">
+        <main className="w-full flex flex-col items-center gap-6 sm:gap-8 lg:gap-12 text-center">
+          <TitleSection />
+          <UnderlineText text="Asesorías personalizadas para que tu negocio crezca con seguridad" />
+          <GoButton />
+        </main>
+      </div>
+
+      <div className="mt-8 sm:mt-16 lg:mt-[250px] w-full">
         <ColorLine />
       </div>
 
-      <div className="w-full">
+      <div className="px-4 sm:px-8 lg:px-[160px] w-full">
         <HowItWorksWithVideo />
-        <ResponsiveContainer />
+      </div>
+
+      <div className="px-4 sm:px-8 lg:px-[160px] w-full flex flex-col">
+        <div className="order-2 sm:order-1">
+          <ResponsiveContainer />
+        </div>
+        <div className="order-1 sm:order-2">
+          <MainContainer />
+        </div>
+      </div>
+
+      <div className="w-full mt-8 sm:mt-12">
         <Carrousel />
-        <MainContainer />
-        <SecondLine />
+      </div>
+
+      <SecondLine />
+
+      <div className="px-4 sm:px-8 lg:px-[160px] w-full">
         <BusinessTalk />
       </div>
 
